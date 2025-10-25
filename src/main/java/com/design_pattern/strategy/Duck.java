@@ -6,7 +6,16 @@ import com.design_pattern.strategy.quack.QuackBehavior;
 public abstract class Duck {
     protected QuackBehavior quackBehavior;
     protected FlyBehavior flyBehavior;
+
+    void setFlyBehavior(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
+    }
+    void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
+    }
+
     public Duck(){}
+
     abstract void display();
     void performFly(){
         this.flyBehavior.fly();
@@ -16,11 +25,5 @@ public abstract class Duck {
     }
     void swim () {
         System.out.println("All ducks float, even decoys!");
-    }
-    void setFlyBehavior(FlyBehavior flyBehavior) {
-        this.flyBehavior = flyBehavior;
-    }
-    void setQuackBehavior(QuackBehavior quackBehavior) {
-        this.quackBehavior = quackBehavior;
     }
 }

@@ -8,9 +8,21 @@ import java.util.List;
 public class WeatherData implements Publisher {
     private List<Subscriber> subscriberList;
     private float temperature;
+
     private float humidity;
     private float pressure;
 
+    public float getTemperature() {
+        return temperature;
+    }
+
+    public float getHumidity() {
+        return humidity;
+    }
+
+    public float getPressure() {
+        return pressure;
+    }
 
     public WeatherData(){
         this.subscriberList = new ArrayList<>();

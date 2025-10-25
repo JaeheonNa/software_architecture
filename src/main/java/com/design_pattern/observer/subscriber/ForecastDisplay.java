@@ -31,7 +31,6 @@ public class ForecastDisplay implements Subscriber, Display{
         forecastList.add("Improving weather on the day!");
         forecastList.add("Watch out for cooler, rainy weather!");
         forecastList.add("More of the same!");
-        Random rd = new Random();
         int i = (int) (Math.random() * forecastList.size());
         System.out.println("Forcast: [ " + forecastList.get(i) + "]");
     }

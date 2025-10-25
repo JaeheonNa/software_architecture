@@ -17,11 +17,6 @@ public class WeatherData implements Publisher {
     }
 
     @Override
-    public void subscribe(Subscriber subscriber) {
-        this.subscriberList.add(subscriber);
-    }
-
-    @Override
     public void removeSubscriber(Subscriber subscriber) {
         int i = subscriberList.indexOf(subscriber);
         if(i>=0) {

@@ -1,5 +1,6 @@
 package com.design_pattern.observer.subscriber;
 
+import com.design_pattern.observer.publisher.Publisher;
 import com.design_pattern.observer.publisher.WeatherData;
 
 import java.util.ArrayList;
@@ -8,11 +9,11 @@ import java.util.Random;
 
 public class ForecastDisplay implements Subscriber, Display{
 
-    private WeatherData weatherData;
+    private Publisher weatherData;
     private float temperature;
     private float humidity;
     private float pressure;
-    public ForecastDisplay(WeatherData weatherData){
+    public ForecastDisplay(Publisher weatherData){
         this.weatherData = weatherData;
         this.weatherData.addSubscriber(this);
     }

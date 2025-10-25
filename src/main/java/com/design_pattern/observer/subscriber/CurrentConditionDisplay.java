@@ -1,13 +1,14 @@
 package com.design_pattern.observer.subscriber;
 
+import com.design_pattern.observer.publisher.Publisher;
 import com.design_pattern.observer.publisher.WeatherData;
 
 public class CurrentConditionDisplay implements Subscriber, Display{
-    private WeatherData weatherData;
+    private Publisher weatherData;
     private float temperature;
     private float humidity;
     private float pressure;
-    public CurrentConditionDisplay(WeatherData weatherData){
+    public CurrentConditionDisplay(Publisher weatherData){
         this.weatherData = weatherData;
         this.weatherData.addSubscriber(this);
     }

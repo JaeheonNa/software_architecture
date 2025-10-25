@@ -1,5 +1,6 @@
 package com.design_pattern.observer.subscriber;
 
+import com.design_pattern.observer.publisher.Publisher;
 import com.design_pattern.observer.publisher.WeatherData;
 
 import java.util.ArrayList;
@@ -10,8 +11,8 @@ public class StatisticsDisplay implements Subscriber, Display{
     private List<Float> temperatureList;
     private float humidity;
     private float pressure;
-    private WeatherData weatherData;
-    public StatisticsDisplay(WeatherData weatherData){
+    private Publisher weatherData;
+    public StatisticsDisplay(Publisher weatherData){
         this.weatherData = weatherData;
         this.temperatureList = new ArrayList<>();
         this.weatherData.addSubscriber(this);

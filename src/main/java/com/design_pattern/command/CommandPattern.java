@@ -5,7 +5,7 @@ import com.design_pattern.command.callee.Tv;
 import com.design_pattern.command.caller.RemoteController;
 import com.design_pattern.command.command.*;
 
-public class Client {
+public class CommandPattern {
     public static void main(String[] args){
         RemoteController remoteController = new RemoteController();
 

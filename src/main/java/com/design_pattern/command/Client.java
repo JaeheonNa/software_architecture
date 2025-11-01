@@ -9,12 +9,12 @@ public class Client {
     public static void main(String[] args){
         RemoteController remoteController = new RemoteController();
 
-        Light livingRoomLightLight = new Light("LivingRoom");
+        Light livingRoomLightLight = new Light("Kitchen");
         Command livingRoomLightOnCommand = new LightOnCommand(livingRoomLightLight);
         Command livingRoomLightOffCommand = new LightOffCommand(livingRoomLightLight);
         remoteController.setCommands(0, livingRoomLightOnCommand, livingRoomLightOffCommand);
 
-        Light kitchenLight = new Light("Kitchen");
+        Light kitchenLight = new Light("LivingRoom");
         Command kitchenLightOnCommand = new LightOnCommand(kitchenLight);
         Command kitchenLightOffCommand = new LightOffCommand(kitchenLight);
         remoteController.setCommands(1, kitchenLightOnCommand, kitchenLightOffCommand);
@@ -26,6 +26,8 @@ public class Client {
         remoteController.onButtonWasPushed(1);
         remoteController.offButtonWasPushed(1);
         remoteController.undoButtonWasPushed();
+
+        System.out.println();
 
         Tv livingRoomTv = new Tv("LivingRoom");
         Command livingRoomTvOnCommand = new TvOnCommand(livingRoomTv);

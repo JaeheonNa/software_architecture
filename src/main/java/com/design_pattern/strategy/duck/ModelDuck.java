@@ -1,4 +1,4 @@
-package com.design_pattern.strategy;
+package com.design_pattern.strategy.duck;
 
 import com.design_pattern.strategy.fly.FlyNoWay;
 import com.design_pattern.strategy.quack.Quack;

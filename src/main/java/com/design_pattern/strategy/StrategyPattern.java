@@ -1,6 +1,9 @@
 package com.design_pattern.strategy;
 
 
+import com.design_pattern.strategy.duck.Duck;
+import com.design_pattern.strategy.duck.ModelDuck;
+import com.design_pattern.strategy.duck.RedHeadDuck;
 import com.design_pattern.strategy.fly.FlyRocketPowered;
 
 public class StrategyPattern {

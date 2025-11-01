@@ -12,4 +12,11 @@ public class Tea extends CaffeineBeverage {
     public void addCondiments() {
         System.out.println("");
     }
+
+    @Override
+    public boolean customerWantsCondiments() {
+        String answer = "Y";
+        if ("Y".equals(answer)) return true;
+        else return false;
+    }
 }

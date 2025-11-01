@@ -1,16 +1,22 @@
 package com.design_pattern.template.template;
 
 public abstract class CaffeineBeverage {
-    // final이 중요!
+    /** Template Method **/
+     // final이 중요!
     final void prepareRecipe() {
         boilWater();
         brew();
         pourInCup();
-        addCondiments();
+        if (customerWantsCondiments()) {
+            addCondiments();
+        }
     }
+
+    /** Abstract Method **/
     public abstract void brew();
     public abstract void addCondiments();
 
+    /** Complete Method **/
     private void boilWater(){
         System.out.println("Boil water.");
     }
@@ -18,4 +24,10 @@ public abstract class CaffeineBeverage {
     private void pourInCup() {
         System.out.println("Pour in cup");
     }
+
+    /** Hook Method **/
+    public boolean customerWantsCondiments() {
+        return true;
+    }
+
 }

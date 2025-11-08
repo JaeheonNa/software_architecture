@@ -3,7 +3,7 @@ package com.design_pattern.template.template;
 public abstract class CaffeineBeverage {
     /** Template Method **/
      // final이 중요!
-    final void prepareRecipe() {
+    final public void prepareRecipe() {
         boilWater();
         brew();
         pourInCup();
@@ -18,11 +18,11 @@ public abstract class CaffeineBeverage {
 
     /** Complete Method **/
     private void boilWater(){
-        System.out.println("Boil water.");
+        System.out.println("Boiling water.");
     }
 
     private void pourInCup() {
-        System.out.println("Pour in cup");
+        System.out.println("Pouring into cup.");
     }
 
     /** Hook Method **/

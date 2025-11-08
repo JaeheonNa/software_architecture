@@ -1,0 +1,22 @@
+package com.design_pattern.ex04_templateMethod.concrete;
+
+import com.design_pattern.ex04_templateMethod.template.CaffeineBeverage;
+
+public class Tea extends CaffeineBeverage {
+    @Override
+    public void brew() {
+        System.out.println("Steeping the tea.");
+    }
+
+    @Override
+    public void addCondiments() {
+        System.out.println("Adding Lemon.");
+    }
+
+    @Override
+    public boolean customerWantsCondiments() {
+        String answer = "Y";
+        if ("Y".equals(answer)) return true;
+        else return false;
+    }
+}

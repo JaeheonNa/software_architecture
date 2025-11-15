@@ -1,4 +1,4 @@
-package com.design_pattern.ex06_factoryMethod.object;
+package com.design_pattern.ex06_factoryMethod.product;
 
 public class NYStyleCheesePizza extends Pizza{
     public NYStyleCheesePizza() {

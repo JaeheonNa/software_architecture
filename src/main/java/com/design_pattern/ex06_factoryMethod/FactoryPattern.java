@@ -3,7 +3,7 @@ package com.design_pattern.ex06_factoryMethod;
 import com.design_pattern.ex06_factoryMethod.factory.ChicagoPizzaStore;
 import com.design_pattern.ex06_factoryMethod.factory.NYPizzaStore;
 import com.design_pattern.ex06_factoryMethod.factory.PizzaStore;
-import com.design_pattern.ex06_factoryMethod.object.Pizza;
+import com.design_pattern.ex06_factoryMethod.product.Pizza;
 
 public class FactoryPattern {
     public static void main(String[] args){
@@ -15,6 +15,5 @@ public class FactoryPattern {
         System.out.println();
         Pizza pizza2 = chicagoStore.orderPizza("cheese");
         System.out.println("Joel ordered a " + pizza2.getName());
-
     }
 }

@@ -1,8 +1,8 @@
 package com.design_pattern.ex06_factoryMethod.factory;
 
-import com.design_pattern.ex06_factoryMethod.object.NYStyleCheesePizza;
-import com.design_pattern.ex06_factoryMethod.object.NYStyleVeggiePizza;
-import com.design_pattern.ex06_factoryMethod.object.Pizza;
+import com.design_pattern.ex06_factoryMethod.product.NYStyleCheesePizza;
+import com.design_pattern.ex06_factoryMethod.product.NYStyleVeggiePizza;
+import com.design_pattern.ex06_factoryMethod.product.Pizza;
 
 public class NYPizzaStore extends PizzaStore{
     @Override

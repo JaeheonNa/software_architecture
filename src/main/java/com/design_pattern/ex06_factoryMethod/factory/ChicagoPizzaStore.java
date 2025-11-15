@@ -1,6 +1,6 @@
-package com.design_pattern.ex06_factory.factory;
+package com.design_pattern.ex06_factoryMethod.factory;
 
-import com.design_pattern.ex06_factory.object.*;
+import com.design_pattern.ex06_factoryMethod.object.*;
 
 public class ChicagoPizzaStore extends PizzaStore{
     @Override

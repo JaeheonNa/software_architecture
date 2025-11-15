@@ -1,9 +1,9 @@
-package com.design_pattern.ex06_factory;
+package com.design_pattern.ex06_factoryMethod;
 
-import com.design_pattern.ex06_factory.factory.ChicagoPizzaStore;
-import com.design_pattern.ex06_factory.factory.NYPizzaStore;
-import com.design_pattern.ex06_factory.factory.PizzaStore;
-import com.design_pattern.ex06_factory.object.Pizza;
+import com.design_pattern.ex06_factoryMethod.factory.ChicagoPizzaStore;
+import com.design_pattern.ex06_factoryMethod.factory.NYPizzaStore;
+import com.design_pattern.ex06_factoryMethod.factory.PizzaStore;
+import com.design_pattern.ex06_factoryMethod.object.Pizza;
 
 public class FactoryPattern {
     public static void main(String[] args){

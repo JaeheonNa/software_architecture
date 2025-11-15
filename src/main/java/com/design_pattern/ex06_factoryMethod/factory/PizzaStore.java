@@ -1,6 +1,6 @@
-package com.design_pattern.ex06_factory.factory;
+package com.design_pattern.ex06_factoryMethod.factory;
 
-import com.design_pattern.ex06_factory.object.Pizza;
+import com.design_pattern.ex06_factoryMethod.object.Pizza;
 
 public abstract class PizzaStore {
     public Pizza orderPizza(String type) {

@@ -1,8 +1,8 @@
-package com.design_pattern.ex06_factory.object;
+package com.design_pattern.ex06_factoryMethod.object;
 
-public class ChicagoStyleVeggiePizza extends Pizza{
-    public ChicagoStyleVeggiePizza() {
-        name = "Chicago Style Deep Dish and Veggie Pizza";
+public class ChicagoStyleCheesePizza extends Pizza{
+    public ChicagoStyleCheesePizza() {
+        name = "Chicago Style Deep Dish and Cheese Pizza";
         dough = "Extra Thick Crust Dough";
         sauce = "Plum Tomato Sauce";
         toppings.add("Shredded Mozzarella Cheese");

@@ -1,4 +1,4 @@
-package com.design_pattern.ex06_factory.object;
+package com.design_pattern.ex06_factoryMethod.object;
 
 import java.util.ArrayList;
 import java.util.List;

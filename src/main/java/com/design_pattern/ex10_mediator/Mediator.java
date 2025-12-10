@@ -12,6 +12,5 @@ public class Mediator {
         mediator.addUser(user3);
 
         user1.send("안녕하세요");
-
     }
 }

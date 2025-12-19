@@ -5,7 +5,7 @@ public class MultiThreadSingleObject_3 implements SingletonInterface{
 
     private MultiThreadSingleObject_3() {}
 
-    public static synchronized MultiThreadSingleObject_3 getInstance(){
+    public static MultiThreadSingleObject_3 getInstance(){
         return object;
     }
 }

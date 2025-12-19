@@ -5,7 +5,7 @@ public class MultiThreadSingleObject_2 implements SingletonInterface{
 
     private MultiThreadSingleObject_2() {}
 
-    public static synchronized MultiThreadSingleObject_2 getInstance(){
+    public static MultiThreadSingleObject_2 getInstance(){
         if (object == null) {
             synchronized (MultiThreadSingleObject_2.class) {
                 if (object == null) {

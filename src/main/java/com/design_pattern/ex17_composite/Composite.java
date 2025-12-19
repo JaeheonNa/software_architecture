@@ -1,7 +1,6 @@
 package com.design_pattern.ex17_composite;
 
 import com.design_pattern.ex17_composite.composite.Menu;
-import com.design_pattern.ex17_composite.composite.MenuComponent;
 import com.design_pattern.ex17_composite.leaf.MenuItem;
 
 public class Composite {
@@ -15,10 +14,10 @@ public class Composite {
         allMenus.add(cafeMenu);
         allMenus.add(dinnerMenu);
 
+        pancakeHouseMenu.add(new MenuItem("Pancake", "Pancake with Strawberry jam", true, 2.89));
+        cafeMenu.add(new MenuItem("Apple Pie", "Apple pie with a flakey crust, topped with vanilla icecream", true, 1.59));
         dinnerMenu.add(new MenuItem("Pasta", "Spaghetti with Marina Sauce, and a slice of sourdough bread", true, 3.89));
         dinnerMenu.add(new MenuItem("Steak", "Steak with Salads and Sauce, and french fries", true, 5.89));
-        cafeMenu.add(new MenuItem("Apple Pie", "Apple pie with a flakey crust, topped with vanilla icecream", true, 1.59));
-        pancakeHouseMenu.add(new MenuItem("Pancake", "Pancake with Strawberry jam", true, 2.89));
 
         Waitress waitress = new Waitress(allMenus);
         waitress.printMenu();

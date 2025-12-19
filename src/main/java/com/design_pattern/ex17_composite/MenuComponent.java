@@ -1,4 +1,4 @@
-package com.design_pattern.ex17_composite.composite;
+package com.design_pattern.ex17_composite;
 
 public class MenuComponent {
     public void add(MenuComponent menuComponent){

@@ -1,11 +1,13 @@
 package com.design_pattern.ex17_composite.composite;
 
+import com.design_pattern.ex17_composite.MenuComponent;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Menu extends MenuComponent{
-    List menuComponents = new ArrayList<>();
+public class Menu extends MenuComponent {
+    List menuComponentList = new ArrayList<>();
     String name;
     String description;
     public Menu(String name, String description){
@@ -14,15 +16,15 @@ public class Menu extends MenuComponent{
     }
 
     public void add(MenuComponent menuComponent){
-        this.menuComponents.add(menuComponent);
+        this.menuComponentList.add(menuComponent);
     }
 
     public void remove(MenuComponent menuComponent){
-        this.menuComponents.remove(menuComponent);
+        this.menuComponentList.remove(menuComponent);
     }
 
     public MenuComponent getChild(int i){
-        return (MenuComponent) menuComponents.get(i);
+        return (MenuComponent) menuComponentList.get(i);
     }
 
     public String getName(){
@@ -35,7 +37,7 @@ public class Menu extends MenuComponent{
 
     public void print() {
         System.out.println(this.name + " for " + this.description);
-        Iterator iterator = menuComponents.iterator();
+        Iterator iterator = menuComponentList.iterator();
         while (iterator.hasNext()) {
             MenuComponent menuComponent = (MenuComponent)iterator.next();
             menuComponent.print();

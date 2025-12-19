@@ -1,6 +1,6 @@
 package com.design_pattern.ex17_composite.leaf;
 
-import com.design_pattern.ex17_composite.composite.MenuComponent;
+import com.design_pattern.ex17_composite.MenuComponent;
 
 public class MenuItem extends MenuComponent {
     String name;

@@ -1,4 +1,4 @@
-package com.design_pattern.ex08_iterator.menu;
+package com.design_pattern.ex08_iterator.aggregate;
 
 import java.util.Hashtable;
 import java.util.Iterator;

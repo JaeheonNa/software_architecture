@@ -1,6 +1,6 @@
 package com.design_pattern.ex08_iterator.iterator;
 
-import com.design_pattern.ex08_iterator.menu.MenuItem;
+import com.design_pattern.ex08_iterator.aggregate.MenuItem;
 
 import java.util.Iterator;
 

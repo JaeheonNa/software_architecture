@@ -1,23 +1,24 @@
 package com.design_pattern.ex08_iterator;
 
-import com.design_pattern.ex08_iterator.menu.CafeMenu;
-import com.design_pattern.ex08_iterator.menu.DinerMenu;
-import com.design_pattern.ex08_iterator.menu.MenuItem;
-import com.design_pattern.ex08_iterator.menu.PancakeHouseMenu;
+import com.design_pattern.ex08_iterator.aggregate.CafeMenu;
+import com.design_pattern.ex08_iterator.aggregate.DinerMenu;
+import com.design_pattern.ex08_iterator.aggregate.MenuItem;
+import com.design_pattern.ex08_iterator.aggregate.PancakeHouseMenu;
+import com.design_pattern.ex08_iterator.client.ServingPerson;
 
 public class Iterator {
     public static void main(String[] args){
-        PancakeHouseMenu pancakeHouseMenu  = new PancakeHouseMenu();
-        DinerMenu dinerMenu = new DinerMenu();
 
         MenuItem pancake = new MenuItem("Pancake");
-        pancakeHouseMenu.addItem(pancake);
         MenuItem milk = new MenuItem("Milk");
+        PancakeHouseMenu pancakeHouseMenu  = new PancakeHouseMenu();
+        pancakeHouseMenu.addItem(pancake);
         pancakeHouseMenu.addItem(milk);
 
         MenuItem steak = new MenuItem("Steak");
-        dinerMenu.addItem(steak);
         MenuItem salad = new MenuItem("Salad");
+        DinerMenu dinerMenu = new DinerMenu();
+        dinerMenu.addItem(steak);
         dinerMenu.addItem(salad);
 
         ServingPerson sp = new ServingPerson(pancakeHouseMenu, dinerMenu);
